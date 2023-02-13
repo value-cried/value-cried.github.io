@@ -1,0 +1,66 @@
+@font-face {
+    font-family: JetBrainsMono-Regular;
+    src: url(JetBrainsMono-Regular.woff2);
+}
+@font-face {
+    font-family: 'Akira Super Expanded'; 
+    src: url("Akira.otf") format("opentype");
+    font-style: bold;
+}
+body{
+    background-color: black;
+}
+.title-text{
+    color:white;
+    font-family: 'Akira Super Expanded';
+    font-size: 3rem;
+}
+.textbox{
+    border: 1px solid #6F6F6F;
+    background-color: #262626;
+    font-family: 'JetBrainsMono-Regular';
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: white;
+    padding: 7px;
+    outline: none;
+    transition: 400ms;
+    width: calc(100vw - 50px);
+}
+.textbox:hover, .textbox:active{
+    border-color: #B4B4B4;
+    transition: 400ms;
+}
+.button{
+    border: 1px;
+    background-color: #3A3A3A;
+    color: white;
+    padding: 9px;
+    border-radius: 3px;
+    font-family: 'JetBrainsMono-Regular';
+    margin-top: 41px;
+    text-decoration: none;
+    transition: 400ms;
+}
+.button:hover, .button:active{
+    background-color: #505050;
+    transition: 400ms;
+}
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flex-container-1{
+    display: flex;
+    align-items: center;
+}
+.flex-container-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
